@@ -1,0 +1,66 @@
+%\ifx\beamer@frame\undefined
+% No es un documento de tipo Beamer
+%Márgenes de página
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{enumitem}
+%\else
+% Es un documento de tipo Beamer
+%\fi
+
+%Cargar paquetes de uso general
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{currfile}
+
+
+%Notaciones de uso habitual
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\biy}{\rightleftharpoons} % Biyección, equilibrio
+\newcommand{\biyV}{\Updownarrow} % Biyección, equilibrio
+%Decisiones estéticas
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\vec}{\overrightarrow}
+\renewcommand\phi\varphi
+\renewcommand\epsilon\varepsilon
+
+\newcommand{\amp}[1]{\overset{\circ}{{#1}}}
+
+
+\ifdefined\XeTeXversion %Si estoy en XeTeX
+\usepackage{fontspec}
+\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=../]
+
+\renewcommand\N{\text{\jmamath N}}
+\renewcommand\biyV{\text{\jmamath;}}
+%\renewcommand\epsilon{\text{\jmamath è}}
+\renewcommand\A{\text{\jmamath A}}
+\fi
+
+\makeatletter
+\newcommand{\titulo}{ %Añadida macro con mi nombre y a fecha
+	\begin{flushright}
+		\textit{\@author \\ \today}
+	\end{flushright}
+	\begin{center}
+		\textbf{{\Large \@title}}
+	\end{center}
+	\currfiledir
+}
+
+%Colores necesarios para que funcionen los códigos, si están cargados
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\makeatother
+

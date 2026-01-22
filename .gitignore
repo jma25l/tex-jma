@@ -1,0 +1,9 @@
+# Arxius generats per latex en compilar la demo
+*.pdf
+*.snm
+*.out
+*.nav
+*.toc
+*.aux
+*.fls
+*.log
