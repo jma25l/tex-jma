@@ -1,3 +1,6 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{jma}[2026/01/22 JMA]
+
 %\ifx\beamer@frame\undefined
 % No es un documento de tipo Beamer
 %Márgenes de página
@@ -13,7 +16,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{cancel}
-\usepackage{currfile}
+\usepackage[abspath]{currfile}
 
 
 %Notaciones de uso habitual
@@ -38,7 +41,7 @@
 
 \ifdefined\XeTeXversion %Si estoy en XeTeX
 \usepackage{fontspec}
-\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=../]
+\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=\CurrentFilePath]
 
 \renewcommand\N{\text{\jmamath N}}
 \renewcommand\biyV{\text{\jmamath;}}
@@ -54,7 +57,8 @@
 	\begin{center}
 		\textbf{{\Large \@title}}
 	\end{center}
-	\currfiledir
+	DIR: \CurrentFilePath
+
 }
 
 %Colores necesarios para que funcionen los códigos, si están cargados
