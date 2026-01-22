@@ -41,7 +41,8 @@
 
 \ifdefined\XeTeXversion %Si estoy en XeTeX
 \usepackage{fontspec}
-\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=\CurrentFilePath]
+\XeTeXtracingfonts=1
+\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=../]
 
 \renewcommand\N{\text{\jmamath N}}
 \renewcommand\biyV{\text{\jmamath;}}
@@ -57,7 +58,7 @@
 	\begin{center}
 		\textbf{{\Large \@title}}
 	\end{center}
-	DIR: \CurrentFilePath
+	%DIR: \CurrentPathDir
 
 }
 
