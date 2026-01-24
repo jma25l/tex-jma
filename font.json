@@ -1,0 +1,23 @@
+{
+    "props": {
+        "ascent": 800,
+        "descent": 200,
+        "em": 1000,
+        "family": "Joaquin MA Math"
+    },
+    "input": "font",
+    "output": [
+        "JoaquinMath.ttf"
+    ],
+    "glyphs": {
+        "0x41": {
+            "src": "A.svg"
+        },
+        "0x4E": {
+            "src": "N.svg"
+        },
+        "0x3B": {
+            "src": "biyV.svg"
+        }
+    }
+}
