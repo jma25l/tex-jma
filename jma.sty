@@ -1,22 +1,26 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{jma}[2026/01/22 JMA]
 
+\ifcsname intRutaPaquete\endcsname
+\else
+  \newcommand{\intRutaPaquete}{../sty}
+\fi
 %\ifx\beamer@frame\undefined
 % No es un documento de tipo Beamer
 %Márgenes de página
-\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
-\usepackage[table,dvipsnames]{xcolor}
-\usepackage{enumitem}
+\RequirePackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\RequirePackage[table,dvipsnames]{xcolor}
+\RequirePackage{enumitem}
 %\else
 % Es un documento de tipo Beamer
 %\fi
 
 %Cargar paquetes de uso general
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{cancel}
-\usepackage[abspath]{currfile}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{cancel}
+\RequirePackage[abspath]{currfile}
 
 
 %Notaciones de uso habitual
@@ -40,9 +44,8 @@
 
 
 \ifdefined\XeTeXversion %Si estoy en XeTeX
-\usepackage{fontspec}
-\XeTeXtracingfonts=1
-\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=../]
+\RequirePackage{fontspec}
+\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=\intRutaPaquete]
 
 \renewcommand\N{\text{\jmamath N}}
 \renewcommand\biyV{\text{\jmamath;}}
@@ -58,7 +61,6 @@
 	\begin{center}
 		\textbf{{\Large \@title}}
 	\end{center}
-	%DIR: \CurrentPathDir
 
 }
 
@@ -69,3 +71,4 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \makeatother
 
+\endinput
