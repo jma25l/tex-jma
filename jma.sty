@@ -5,15 +5,16 @@
 \else
   \newcommand{\intRutaPaquete}{../sty}
 \fi
-%\ifx\beamer@frame\undefined
+
+\ifx\beamer@frame\undefined
 % No es un documento de tipo Beamer
 %Márgenes de página
 \RequirePackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
 \RequirePackage[table,dvipsnames]{xcolor}
 \RequirePackage{enumitem}
-%\else
+\else
 % Es un documento de tipo Beamer
-%\fi
+\fi
 
 %Cargar paquetes de uso general
 \RequirePackage{amsmath}
