@@ -1,6 +1,6 @@
 # La meva classe de LaTeX:
 
-**Nota important: ** Aquest projecte resulta de la recopilació de les eines que jo empro en maquetar un document, i per tant, que em són d'utilitat. Ho he incorporat en un repositori per facilitar-me el control de versions, documentat per tenir clar què és el que estic fent, i publicat perquè ja que estic. Sigues lliure de tocar, adaptar, inspirar-te o emprar qualsevol element d'aqui. A continuació enumero una mica per sobre les diferents parts que té aquest repositori, a més d'alguna consideració. 
+__Nota Important:__ Aquest projecte resulta de la recopilació de les eines que jo empro en maquetar un document, i per tant, que em són d'utilitat. Ho he incorporat en un repositori per facilitar-me el control de versions, documentat per tenir clar què és el que estic fent, i publicat perquè ja que estic. Sigues lliure de tocar, adaptar, inspirar-te o emprar qualsevol element d'aqui. A continuació enumero una mica per sobre les diferents parts que té aquest repositori, a més d'alguna consideració. 
 
 La majoria de les parts dels noms de les macros, a més dels comentaris estan en castellà, en ser la llengua en la que els vaig escriure quen plantejava originalment. 
 
@@ -23,18 +23,18 @@ La llicència de les fonts de la AMS (\mathbb, per exemple) permet la publicaci�
 ## Ús paquet LaTeX: 
 Per afegir la classe, simplement `\usepackage{<ruta relativa>}`. Està plantejat per a que la estructura de directoris sigui: 
 - Base
- - sty
-  - jma.sty
-  - JoaquinMath.ttf
- - document 1
-  - main.tex
- - document 2
-  - main.tex
+  - sty
+    - jma.sty
+    - JoaquinMath.ttf
+  - document 1
+    - main.tex
+  - document 2
+    - main.tex
 
 En cas contrari i per a poder carregar bé la font, cal posar `\newcommand{\intRutaPaquete}{<ruta relativa>}`, veure l'exemple a la carpeta demo. 
 
 ## Funcionalitats paquet
-- Sigui $X \in \{N, Z, Q, R, C, K, A}$, aleshores `\X`: `\mathbb X`. Emprant XeLaTeX i la font, alguns caracters donen la versió modificada. 
+- Sigui $X \in \{N, Z, Q, R, C, K, A\}$, aleshores `\X`: `\mathbb X`. Emprant XeLaTeX i la font, alguns caracters donen la versió modificada. 
 - \biy, \biyV: Bijecció, veure la nota sobre la font
 - Substituir `\geq, \leq` per les versions $\geqslant, \leqslant$. El mateix amb `\phi`: $\varphi$ i `\epsilon`: $\varepsilon$
 - Macro `\titulo` per encapçalar documents senzills. Incorpora el títol, l'autor i la data de compilació. *Molt útil quan s'imprimeixen/envien esborranys*. 
