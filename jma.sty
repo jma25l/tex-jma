@@ -46,10 +46,10 @@
 \RequirePackage{fontspec}
 \newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=\intRutaPaquete]
 
-\renewcommand\N{\text{\jmamath N}}
-\renewcommand\biyV{\text{\jmamath;}}
+\renewcommand\N{\text{\jmamath{N}}}
+\renewcommand\biyV{\text{\jmamath{;}}}
 %\renewcommand\epsilon{\text{\jmamath è}}
-\renewcommand\A{\text{\jmamath A}}
+\renewcommand\A{\text{\jmamath{A}}}
 \fi
 
 \makeatletter
@@ -62,6 +62,17 @@
 	\end{center}
 
 }
+
+% MACRO SECCIONS DEMOSTRACIO
+\newcommand\sepDemo[1]{
+	\par \begin{tabular}{r|}
+		#1\\ \hline
+	\end{tabular}\\[0.2cm]
+}
+
+\newcommand{\directa}{\sepDemo{$\implies$}}
+\newcommand{\reciproc}{\sepDemo{$\impliedby$}}
+
 
 %Colores necesarios para que funcionen los códigos, si están cargados
 \definecolor{codegreen}{rgb}{0,0.6,0}

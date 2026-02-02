@@ -41,4 +41,5 @@ En cas contrari i per a poder carregar bé la font, cal posar `\newcommand{\intR
 - Definir alguns colors que empro per al paquet listings (mostrar codi). *PENDENT: Incorporar la configuració de l'estil dels blocs de codi, *
 - (Si no són diapositives) Adjustar els marges de la pàgina amb el paquet `geometry`, a més de carregar els paquets `xcolor` i `enumitem` 
 - Carregar els paquets `amsmath`, `amssymb`, `amsfonts` i `cancel`; per a formatar l'entrada matemàtica. 
+- Afegida macro `\sepDemo{#1}`, que empro per recuadrar per sota i per la dreta, l'empro per a indicar les inclusions i també les implicacions. Hi ha els àlies: `\directa: \sepDemo{$\implies$}` i  `\reciproc: \sepDemo{$\impliedby$}` 
 
