@@ -38,8 +38,11 @@ En cas contrari i per a poder carregar bé la font, cal posar `\newcommand{\intR
 - \biy, \biyV: Bijecció, veure la nota sobre la font
 - Substituir `\geq, \leq` per les versions $\geqslant, \leqslant$. El mateix amb `\phi`: $\varphi$ i `\epsilon`: $\varepsilon$
 - Macro `\titulo` per encapçalar documents senzills. Incorpora el títol, l'autor i la data de compilació. *Molt útil quan s'imprimeixen/envien esborranys*. 
-- Definir alguns colors que empro per al paquet listings (mostrar codi). *PENDENT: Incorporar la configuració de l'estil dels blocs de codi, *
-- (Si no són diapositives) Adjustar els marges de la pàgina amb el paquet `geometry`, a més de carregar els paquets `xcolor` i `enumitem` 
+- Definir alguns colors que empro per al paquet listings (mostrar codi). PENDENT: Incorporar la configuració de l'estil dels blocs de codi,
+- (Si no són diapositives) Adjustar els marges de la pàgina amb el paquet `geometry`, a més de carregar els paquets `xcolor` i `enumitem` .
+- Carregar i configurar `hyperref` per a que no creii els requadres. 
 - Carregar els paquets `amsmath`, `amssymb`, `amsfonts` i `cancel`; per a formatar l'entrada matemàtica. 
-- Afegida macro `\sepDemo{#1}`, que empro per recuadrar per sota i per la dreta, l'empro per a indicar les inclusions i també les implicacions. Hi ha els àlies: `\directa: \sepDemo{$\implies$}` i  `\reciproc: \sepDemo{$\impliedby$}` 
+- Macro `\sepDemo{#1}`, que empro per recuadrar per sota i per la dreta, l'empro per a indicar les inclusions i també les implicacions. Hi ha els àlies: `\directa: \sepDemo{$\implies$}` i  `\reciproc: \sepDemo{$\impliedby$}` 
 
+## Funcionals addicionals: 
+- `tikz` En posar aquesta opció, carrega el paquet tikz, amb una configuració per a evitar col·lisions amb babel. 

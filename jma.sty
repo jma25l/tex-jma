@@ -1,5 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{jma}[2026/01/22 JMA]
+\RequirePackage{kvoptions} % Ver si se puede usar mejor
 
 \ifcsname intRutaPaquete\endcsname
 \else
@@ -51,6 +52,18 @@
 %\renewcommand\epsilon{\text{\jmamath è}}
 \renewcommand\A{\text{\jmamath{A}}}
 \fi
+
+% Cargar TikZ con lo que necesite
+\DeclareBoolOption{tikz}
+
+\ProcessKeyvalOptions*
+\ifjma@tikz
+	\RequirePackage{tikz}
+	\usetikzlibrary{babel} % Evitar problemas con [->], por ejemplo
+\fi
+
+
+% PONER AQUÍ OTRAS OPCIONES
 
 \makeatletter
 \newcommand{\titulo}{ %Añadida macro con mi nombre y a fecha
