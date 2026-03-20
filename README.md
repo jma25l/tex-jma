@@ -35,6 +35,7 @@ En cas contrari i per a poder carregar bé la font, cal posar `\newcommand{\intR
 
 ## Funcionalitats paquet
 - Sigui $X \in \{N, Z, Q, R, C, K, A\}$, aleshores `\X`: `\mathbb X`. Emprant XeLaTeX i la font, alguns caracters donen la versió modificada. 
+- Afegit `\ind` per a denotar la funció indicadora. De moment, $\mathbf 1$ 
 - \biy, \biyV: Bijecció, veure la nota sobre la font
 - Substituir `\geq, \leq` per les versions $\geqslant, \leqslant$. El mateix amb `\phi`: $\varphi$ i `\epsilon`: $\varepsilon$
 - Macro `\titulo` per encapçalar documents senzills. Incorpora el títol, l'autor i la data de compilació. *Molt útil quan s'imprimeixen/envien esborranys*. 
