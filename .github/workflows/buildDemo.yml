@@ -1,0 +1,19 @@
+name: Build Demo
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v6
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: ./demo.tex
+          latexmk_use_xelatex: true
+          working_directory: ./demo
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v6
+        with:
+          name: Demo - Article
+          path: ./demo/demo.pdf
