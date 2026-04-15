@@ -9,11 +9,15 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: ./demo.tex
+          root_file: |
+            ./demo.tex
+            ./beamer.tex
           latexmk_use_xelatex: true
           working_directory: ./demo
       - name: Upload PDF file
         uses: actions/upload-artifact@v6
         with:
           name: Demo - Article
-          path: ./demo/demo.pdf
+          path: |
+            ./demo/demo.pdf
+            ./demo/beamer.pdf
