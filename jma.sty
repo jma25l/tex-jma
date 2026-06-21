@@ -14,9 +14,11 @@
 \RequirePackage[table,dvipsnames]{xcolor}
 \RequirePackage{enumitem}
 \RequirePackage[hidelinks]{hyperref}
+\newcommand{\qed}{\begin{flushright}\textit{QED}\end{flushright}}
 
 \else
 % Es un documento de tipo Beamer
+
 \fi
 
 %Cargar paquetes de uso general
@@ -88,9 +90,6 @@
 
 \newcommand{\directa}{\sepDemo{$\implies$}}
 \newcommand{\reciproc}{\sepDemo{$\impliedby$}}
-
-\newcommand{\qed}{\begin{flushright}\textit{qed}\end{flushright}}
-
 
 % MACRO SEPARADOR TRIF
 \newcommand\sepTri[2]{
