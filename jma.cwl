@@ -5,7 +5,7 @@
 #include:cancel
 #include:babel
 #include:xcolor
-#include:ams
+#include:hyperref
 #include:ams
 
 # Funcions meves

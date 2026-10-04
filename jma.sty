@@ -8,14 +8,13 @@
 \fi
 
 \ifx\beamer@frame\undefined
-% No es un documento de tipo Beamer
-%Márgenes de página
-\RequirePackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
-\RequirePackage[table,dvipsnames]{xcolor}
-\RequirePackage{enumitem}
-\RequirePackage[hidelinks]{hyperref}
-\newcommand{\qed}{\begin{flushright}\textit{QED}\end{flushright}}
-
+	% No es un documento de tipo Beamer
+	%Márgenes de página
+	\RequirePackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+	\RequirePackage[table,dvipsnames]{xcolor}
+	\RequirePackage{enumitem}
+	\RequirePackage[hidelinks]{hyperref}
+	\newcommand{\qed}{\begin{flushright}\textit{QED}\end{flushright}}
 \else
 % Es un documento de tipo Beamer
 
@@ -51,13 +50,13 @@
 
 
 \ifdefined\XeTeXversion %Si estoy en XeTeX
-\RequirePackage{fontspec}
-\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=\intRutaPaquete]
+	\RequirePackage{fontspec}
+	\newfontfamily{\jmamath}{JoaquinMath}[Extension = .ttf, Path=\intRutaPaquete]
 
-\renewcommand\N{\text{\jmamath{N}}}
-\renewcommand\biyV{\text{\jmamath{;}}}
-%\renewcommand\epsilon{\text{\jmamath è}}
-\renewcommand\A{\text{\jmamath{A}}}
+	\renewcommand\N{\text{\jmamath{N}}}
+	\renewcommand\biyV{\text{\jmamath{;}}}
+	%\renewcommand\epsilon{\text{\jmamath è}}
+	\renewcommand\A{\text{\jmamath{A}}}
 \fi
 
 % Cargar TikZ con lo que necesite
@@ -73,7 +72,7 @@
 % PONER AQUÍ OTRAS OPCIONES
 
 \makeatletter
-\newcommand{\titulo}{ %Añadida macro con mi nombre y a fecha
+\newcommand{\titulo}{ %Añadida macro con mi nombre, la fecha y el título
 	\begin{flushright}
 		\textit{\@author \\ \today}
 	\end{flushright}
