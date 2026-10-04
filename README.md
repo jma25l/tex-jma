@@ -42,10 +42,12 @@ En cas contrari i per a poder carregar bé la font, cal posar `\newcommand{\intR
 - Definir alguns colors que empro per al paquet listings (mostrar codi). PENDENT: Incorporar la configuració de l'estil dels blocs de codi,
 - (Si no són diapositives) Adjustar els marges de la pàgina amb el paquet `geometry`, a més de carregar els paquets `xcolor` i `enumitem` .
 - Carregar i configurar `hyperref` per a que no creii els requadres. 
-- Carregar els paquets `amsmath`, `amssymb`, `amsfonts` i `cancel`; per a formatar l'entrada matemàtica. 
+- Carregar els paquets `amsmath`, `amssymb`, `amsfonts` i `cancel`; per a formatar l'entrada matemàtica.
+- Carregar babel, recomano carregar els idiomes emprant la sintaxi nova: `\documentclass[catalan]{article}`. 
 - Macro `\sepDemo{#1}`, que empro per recuadrar per sota i per la dreta, l'empro per a indicar les inclusions i també les implicacions. Hi ha els àlies: `\directa: \sepDemo{$\implies$}` i  `\reciproc: \sepDemo{$\impliedby$}` 
 - Macro `\sepTri{#1}{#2}`, que empro per a separar elements en una dimensió diferent als encapçalaments, és a dir, per a separar la matèria pre-parcial i post-parcial, quan no són temes exactes. `#1` correspon al text que hi ha dins i `#2` al color.
 - Afegit `\qed` en mode no-beamer. En beamer ve per defecte amb el quadrat. 
+- Arxiu `jma.cwl`, per a donar les indicacions a texstudio (i potser algun editor més), sobre el que està permés, el que no, i els paquets adicionals que carrego. Soc conscient que de moment no s'instala automàticament, ni es carrega amb la llibreria.
 
 ## Funcionals addicionals: 
 - `tikz` En posar aquesta opció, carrega el paquet tikz, amb una configuració per a evitar col·lisions amb babel. 
