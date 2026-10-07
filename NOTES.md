@@ -9,7 +9,8 @@ LineEnding code:
 1 local (only \n or \r\n)
 2 linux (\n)
 3 win (\r\n)
-4 mac (\r)```
+4 mac (\r)
+```
 
 Ref: https://github.com/texstudio-org/texstudio/issues/4667
 
