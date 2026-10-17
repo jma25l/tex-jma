@@ -34,7 +34,7 @@ Per afegir la classe, simplement `\usepackage{<ruta relativa>}`. Està plantejat
 En cas contrari i per a poder carregar bé la font, cal posar `\newcommand{\intRutaPaquete}{<ruta relativa>}`, veure l'exemple a la carpeta demo. 
 
 ## Funcionalitats paquet
-- Sigui $X \in \{N, Z, Q, R, C, K, A\}$, aleshores `\X`: `\mathbb X`. Emprant XeLaTeX i la font, alguns caracters donen la versió modificada. 
+- Sigui $X \in \\{N, Z, Q, R, C, K, A\\}$, aleshores `\X`: `\mathbb X`. Emprant XeLaTeX i la font, alguns caracters donen la versió modificada. 
 - Afegit `\ind` per a denotar la funció indicadora. De moment, $\mathbf 1$ 
 - \biy, \biyV: Bijecció, veure la nota sobre la font
 - Substituir `\geq, \leq` per les versions $\geqslant, \leqslant$. El mateix amb `\phi`: $\varphi$ i `\epsilon`: $\varepsilon$
@@ -47,7 +47,7 @@ En cas contrari i per a poder carregar bé la font, cal posar `\newcommand{\intR
 - Macro `\sepDemo{#1}`, que empro per recuadrar per sota i per la dreta, l'empro per a indicar les inclusions i també les implicacions. Hi ha els àlies: `\directa: \sepDemo{$\implies$}` i  `\reciproc: \sepDemo{$\impliedby$}` 
 - Macro `\sepTri{#1}{#2}`, que empro per a separar elements en una dimensió diferent als encapçalaments, és a dir, per a separar la matèria pre-parcial i post-parcial, quan no són temes exactes. `#1` correspon al text que hi ha dins i `#2` al color.
 - Afegit `\qed` en mode no-beamer. En beamer ve per defecte amb el quadrat. 
-- Arxiu `jma.cwl`, per a donar les indicacions a texstudio (i potser algun editor més), sobre el que està permés, el que no, i els paquets adicionals que carrego. Soc conscient que de moment no s'instala automàticament, ni es carrega amb la llibreria.
+- Arxiu `jma.cwl`, per a donar les indicacions a texstudio (i potser algun editor més), sobre el que està permés, el que no, i els paquets adicionals que carrego. 
 
 ## Funcionals addicionals: 
 - `tikz` En posar aquesta opció, carrega el paquet tikz, amb una configuració per a evitar col·lisions amb babel. 
